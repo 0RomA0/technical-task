@@ -26,7 +26,6 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof SidebarMenu>;
 
-// Меню з 1 рівнем
 export const SingleLevelMenu: Story = {
   args: {
     isOpen: true,
@@ -34,7 +33,6 @@ export const SingleLevelMenu: Story = {
   },
 };
 
-// Меню з 2 рівнями
 export const NestedMenu: Story = {
   args: {
     isOpen: true,
@@ -56,7 +54,6 @@ export const NestedMenu: Story = {
   },
 };
 
-// Закрите меню
 export const ClosedMenu: Story = {
   args: {
     isOpen: false,
