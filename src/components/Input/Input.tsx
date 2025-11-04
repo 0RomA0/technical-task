@@ -37,14 +37,16 @@ export default function Input({ type, name, placeholder }: InputProps) {
         >
           <svg className={style.eyeIcon} width="20" height="20">
             <use
-              href={`/sprite.svg#${eyeOpen ? 'icon-eye-on' : 'icon-eye-off'}`}
+              href={`${import.meta.env.BASE_URL}sprite.svg#${
+                eyeOpen ? 'icon-eye-on' : 'icon-eye-off'
+              }`}
             />
           </svg>
         </button>
       ) : (
         <button type="button" className={style.closeBtn} onClick={handleClick}>
           <svg className={style.closeIcon} width="20" height="20">
-            <use href="/sprite.svg#icon-close" />
+            <use href={`${import.meta.env.BASE_URL}sprite.svg#icon-close`} />
           </svg>
         </button>
       )}

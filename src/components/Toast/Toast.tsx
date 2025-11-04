@@ -41,7 +41,7 @@ export default function Toast({
         {closable && (
           <button className={style.closeBtn} onClick={handlClick} title="Close">
             <svg className={style.closeIcon} width="20" height="20">
-              <use href="/sprite.svg#icon-close" />
+              <use href={`${import.meta.env.BASE_URL}sprite.svg#icon-close`} />
             </svg>
           </button>
         )}
